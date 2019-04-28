@@ -1,12 +1,12 @@
 [package]
-name = "conrod_core"
+name = "kiss3d_conrod"
 version = "0.63.0"
 authors = [
     "Mitchell Nordine <mitchell.nordine@gmail.com>",
     "Sven Nilsen <bvssvni@gmail.com>"
 ]
 keywords = ["ui", "widgets", "gui", "interface", "graphics"]
-description = "An easy-to-use, 100% Rust, extensible 2D GUI library."
+description = "Fork of conrod_core (an easy-to-use, 100% Rust, extensible 2D GUI library) compatible with WASM and Kiss3D."
 license = "MIT OR Apache-2.0"
 readme = "../README.md"
 repository = "https://github.com/pistondevelopers/conrod.git"
@@ -22,7 +22,7 @@ stdweb = [ "instant/stdweb" ]
 wasm-bindgen = [ "instant/wasm-bindgen" ]
 
 [dependencies]
-conrod_derive = { path = "../conrod_derive", version = "0.63" }
+conrod_derive = "0.63"
 daggy = "0.5"
 fnv = "1.0"
 num = "0.2"
